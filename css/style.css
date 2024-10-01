@@ -1,0 +1,148 @@
+form{
+    margin-top: 10%;
+    text-align: left;
+    
+    }
+    
+    .fa-spotify{
+    
+        font-size: 100px;
+        color: aliceblue;
+    }
+    
+    body{
+    
+        background-color: 	#93d7ff;
+    }
+    
+    .form-label{
+        color: black;
+        font-size: 15px;
+    }
+    
+    .btn{
+        width: 40%;
+    
+    }
+    
+    .button{
+    text-align: center;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+     
+  
+    
+    nav h1{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #2292be;
+        padding: 15px 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+     
+     
+    nav h2 {
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+    }
+     
+    
+    .container {
+        margin-top: 80px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 80px); 
+    }
+     
+    
+    form {
+        background-color: rgba(255, 255, 255, 0.9); 
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 350px;
+        width: 100%;
+        border: 2px solid hsl(204, 100%, 77%); 
+    }
+     
+    
+    label {
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: block;
+        color: #000000; 
+    }
+     
+    
+    input[type="text"], input[type="date"], select {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: #f0f8ff;
+        transition: border-color 0.3s ease;
+    }
+     
+    
+    input[type="text"]:focus, input[type="date"]:focus, select:focus {
+        border-color:  hsl(204, 100%, 77%); 
+    }
+     
+    button[type="submit"] {
+        background-color:  #2292be; 
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        transition: background-color 0.3s ease;
+    }
+     
+    
+    button[type="submit"]:hover {
+        background-color: hsl(204, 100%, 77%); 
+       }
+     
+    
+    input:required {
+        border-color:  hsl(204, 98%, 33%); 
+    }
+     
+    
+    input[type="radio"] {
+        margin-right: 10px;
+    }
+     
+    input[type="radio"] + label {
+        display: inline-block;
+        margin-right: 15px;
+        font-weight: normal;
+    }
+     
+    
+    @media (max-width: 600px) {
+        form {
+            padding: 20px;
+        }
+     
+        button[type="submit"] {
+            font-size: 14px;
+        }
+    }
