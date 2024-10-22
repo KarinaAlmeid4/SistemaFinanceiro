@@ -4,14 +4,14 @@ form{
     
     }
     
-    .fa-spotify{
+    .fa-github{
     
         font-size: 100px;
         color: aliceblue;
     }
     
     body{
-    
+        background-image: url(https://canalcarro.net.br/wp-content/uploads/2024/06/Design-do-Bugatti-Tourbillon.webp);
         background-color: 	#93d7ff;
     }
     
@@ -29,7 +29,7 @@ form{
     text-align: center;
     }
 
-    * {
+    *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -59,19 +59,24 @@ form{
      
     
     .container {
-        margin-top: 80px; 
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0,1);
+        border-radius: 10px;
+        backdrop-filter: blur(0px);
+        margin-top: 100px; 
         display: flex;
         justify-content: center;
         align-items: center;
         height: calc(100vh - 80px); 
+        width: 300px;
+        height: auto;
     }
-     
+
     
     form {
         background-color: rgba(255, 255, 255, 0.9); 
         padding: 30px;
         border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 px 100px rgba(0, 0, 0, 0.1);
         max-width: 350px;
         width: 100%;
         border: 2px solid hsl(204, 100%, 77%); 
@@ -146,3 +151,5 @@ form{
             font-size: 14px;
         }
     }
+
+ 
