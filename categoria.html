@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Categoria</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <h2>Cadastro de Categoria</h2>
-    </nav>
+  
+    <div class="container text-center">
+        <h1>Cadastro de Categoria</h1>
+        <form action="php/INSERT.CATEG.php" method="post">
  
-    
-    <div class="container">
-        <form action="php/INSERT.CATEG.php" method ="POST">
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome" maxlength="40" required><br><br>
+            <div class="form-group">
+                <label for="nome">Nome da Categoria:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o nome da categoria" required>
+            </div>
  
-            <label for="ds_lancamento">Descrição:</label><br>
-        <input type="text" id="ds_lancamento" name="ds_lancamento" maxlength="40" required><br><br>
+            <div class="form-group">
+                <label for="tipo">Tipo:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="1">Ativo</option>
+                    <option value="0">Inativo</option>
+                </select>
+            </div>
  
-        <label for="fk_Tipo">Usuário:</label><br>
-        <select id="fk_Tipo" name="fk_Tipo" required>
-
-            <label for="tipo">Tipo:</label><br>
-            <option >Selecione</option>
-            <option value="1">Tipo 1</option>
-            <option value="2">Tipo 2</option>
-            <option value="3">Outros</option>
-        </select><br><br>
-        
+   
+            <div class="form-group">
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao" placeholder="Digite a descrição" required>
+            </div>
  
-            <button type="submit">Cadastrar Categoria</button>
+            <div class="form-group">
+                <button type="submit" class="btn" id="a">Cadastrar Categoria</button>
+            </div>
         </form>
-
     </div>
+
 </body>
 </html>

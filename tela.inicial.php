@@ -9,6 +9,16 @@
     <script src="https://kit.fontawesome.com/c0f408d1cc.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div style="">
+  <?php
+         session_start();
+         if (isset($_SESSION['id'])) {
+           $id = $_SESSION['id'];
+           echo "olá $id";
+            } else{
+             echo "<script>alert('Usuário precisar logar'); history.back();</script>";
+            }
+  ?>
     <div class="container text-center">
         <div class="row">
           <div class="col-sm-90 col-md-100">

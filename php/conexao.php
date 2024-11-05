@@ -14,6 +14,4 @@ if ($conexao ->connect_error) {
     echo "Conectado com sucesso";
 }
 
-
-
 ?>
